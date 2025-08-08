@@ -1,0 +1,33 @@
+body{
+    display: flex;
+    justify-content: center;
+    
+}
+
+.form {
+    
+    content: center;
+    text-align: center;
+    
+    align-items: center;
+    align-self: center;
+    
+    width: 15%;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: beige;
+    
+}
+
+
+.form-dados {
+
+    flex-direction: column;
+    background-color: beige;
+     
+
+    /* align-self: center;
+    align-items: center; */
+} 
