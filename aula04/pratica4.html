@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css_pratica4.css">
+    <title>Document</title>
+</head>
+<body>
+
+    <div>
+        <input type="text" id="login" placeholder="Login">
+        <input type="text" id="senha" placeholder="Senha">
+        <input type="button" value="Clique aqui" onclick="onClickSalvaDados()">
+    </div>
+
+    
+    <script>
+
+        function onClickSalvaDados() {
+            
+            var login = document.getElementById('login').value;
+            var senha = document.getElementById('senha').value;
+            
+            if (login == 'user' && senha == 'pass') {
+                alert('Login Ok');
+                document.querySelector('div').classList.remove('user_pass_sucess');
+                document.querySelector('div').classList.add('user_pass_sucess');
+            } else {
+                alert('Login Fail');
+                document.querySelector('div').classList.remove('user_pass_sucess');
+                document.querySelector('div').classList.add('user_pass_fail');
+            }
+            
+            
+        }
+
+    </script>
+
+
+</body>
+</html>
