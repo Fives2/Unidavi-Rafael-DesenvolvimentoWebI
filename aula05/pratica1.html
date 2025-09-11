@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        #resultado {
+            padding: 10px;
+            border: 1px solid black;
+            margin-top: 10px;
+            width: 200px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Calculadora Básica</h1>
+    <input type="number" id="num1" placeholder="Número 1">
+    <select id="operacao">
+        <option value="+">+</option>
+        <option value="-">-</option>
+        <option value="*">*</option>
+        <option value="/">/</option>
+    </select>
+    <input type="number" id="num2" placeholder="Número 2">
+    <button onclick="calcular()">Calcular</button>
+    <div id="resultado"></div>
+
+    <script>
+        function calcular() {
+            var num1 = parseFloat(document.getElementById('num1').value);
+            var num2 = parseFloat(document.getElementById('num2').value);
+            var op = document.getElementById('operacao').value;
+            var res;
+
+            switch (op) {
+                case '+':
+                    res = num1 + num2;
+                    break;
+                case '-':
+                    res = num1 - num2;
+                    break;
+                case '*':
+                    res = num1 * num2;
+                    break;
+                case '/':
+                    res = num1 / num2;
+                    break;
+                default:
+                    res = 0;
+            }
+
+            document.getElementById('resultado').innerHTML = res;
+
+            var divResultado = document.getElementById('resultado');
+            if (res < 0) {
+                divResultado.style.backgroundColor = 'red';
+            } else if (res > 0) {
+                divResultado.style.backgroundColor = 'green';
+            } else {
+                divResultado.style.backgroundColor = 'gray';
+            }
+        }
+    </script>
+</body>
+</html>

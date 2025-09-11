@@ -16,16 +16,3 @@ Um arquivo principal `index.html` na raiz permite navegar entre as atividades de
 Arquivos disponíveis em: [`/aula01`](./aula01/).
 
 ---
-
-## Instalação
-Passos para instalar e configurar o projeto localmente:
-
-```bash
-# Clonar o repositório
-git clone https://github.com/Fives2/Unidavi-Rafael-DesenvolvimentoWebI.git
-
-# Acessar a pasta do projeto
-cd nomeDaPasta
-
-# (Opcional) Instalar dependências se necessário
-npm install
