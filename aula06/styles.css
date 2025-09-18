@@ -1,0 +1,113 @@
+/* Estilização geral */
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 10px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+section {
+    margin: 20px 0;
+}
+
+h2 {
+    color: #333;
+}
+
+/* Formulário */
+.dados_pessoa {
+    border: 1px solid #ccc;
+    padding: 15px;
+    background-color: #fff;
+}
+
+.dados_pessoa ul {
+    list-style: none;
+    padding: 0;
+}
+
+.dados_pessoa li {
+    margin-bottom: 10px;
+}
+
+input[type="text"], input[type="email"], input[type="date"], select {
+    width: 200px;
+    padding: 5px;
+}
+
+input[type="submit"], input[type="reset"], button {
+    padding: 10px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+/* Calculadora */
+#resultado {
+    padding: 10px;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.resultado-negativo {
+    background-color: red;
+    color: white;
+}
+
+.resultado-positivo {
+    background-color: green;
+    color: white;
+}
+
+.resultado-zero {
+    background-color: gray;
+    color: white;
+}
+
+/* Tabela */
+table {
+    border-collapse: collapse;
+    width: 100%;
+    max-width: 600px;
+}
+
+th, td {
+    padding: 8px;
+    text-align: center;
+    border: 1px solid #ddd;
+}
+
+th {
+    background-color: #333;
+    color: white;
+}
+
+/* Media Query para impressão */
+@media print {
+    body {
+        font-family: 'Courier New', Courier, monospace;
+    }
+    button, input[type="submit"], input[type="reset"] {
+        display: none;
+    }
+}
