@@ -26,3 +26,18 @@ for ($i=0; $i <5 ; $i++) {
 $tabela .= '</table>';
 
 echo $tabela;
+
+
+$tabela = '<table>';
+for ($i=0; $i <5 ; $i++) {
+    $tabela .= '<tr>';
+    for ($t=0; $t <3 ; $t++) { 
+         $tabela .= "<td>". $matriz[$i][$t] ."</td>";
+    }
+    $tabela .= '</tr>';
+}
+$tabela .= '</table>';
+echo $tabela;
+
+
+
