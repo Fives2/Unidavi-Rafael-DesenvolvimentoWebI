@@ -22,4 +22,6 @@ function financiamento($parcelas, $taxa_inicial){
     }
 }
 
+financiamento($parcelas, $taxa_inicial);
+
 echo '<a href="index.php"><br>Voltar</a>';
